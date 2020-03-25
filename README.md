@@ -2,6 +2,8 @@
 
 Docker image for [sqlpackage](https://docs.microsoft.com/en-us/sql/tools/sqlpackage-download) 18.4.
 
+Available on [Docker Hub](https://hub.docker.com/r/markhobson/sqlpackage).
+
 ## Usage
 
 To run sqlpackage:
