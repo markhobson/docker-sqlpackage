@@ -12,9 +12,9 @@ To run sqlpackage:
 docker run -it --rm markhobson/sqlpackage
 ```
 
-To import bacpac file `/bacpacs/db.bacpac` to `Server=tcp:localhost,1433;Initial Catalog=db;User ID=sa;Password=password;`:
+To import bacpac file `/backups/db.bacpac` to `Server=tcp:localhost,1433;Initial Catalog=db;User ID=sa;Password=password;`:
 
 ```bash
-docker run -it --rm -v /bacpacs:/host --network=host sqlpackage \
-    /a:Import /tsn:tcp:localhost /tdn:db /tu:sa /tp:password /sf:/host/db.bacpac
+docker run -it --rm -v /backups:/data --network=host sqlpackage \
+    /a:Import /tsn:tcp:localhost /tdn:db /tu:sa /tp:password /sf:/data/db.bacpac
 ```
