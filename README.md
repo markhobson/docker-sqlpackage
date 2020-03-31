@@ -18,3 +18,10 @@ To import bacpac file `/backups/db.bacpac` to local database `db` with username 
 docker run -it --rm -v /backups:/data --network=host sqlpackage \
     /a:Import /tsn:tcp:localhost /tdn:db /tu:sa /tp:password /sf:/data/db.bacpac
 ```
+
+To export local database `db` with username `sa` and password `password` to bacpac file `/backups/db.bacpac`:
+
+```bash
+docker run -it --rm -v /backups:/data --network=host sqlpackage \
+    /a:Export /ssn:tcp:localhost /sdn:db /su:sa /sp:password /tf:/data/db.bacpac
+```
