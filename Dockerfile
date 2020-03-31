@@ -11,3 +11,5 @@ RUN apt update \
 	&& unzip sqlpackage-linux.zip -d /opt/sqlpackage \
 	&& chmod a+x /opt/sqlpackage/sqlpackage \
 	&& ln -s /opt/sqlpackage/sqlpackage /usr/bin/sqlpackage
+
+ENTRYPOINT ["sqlpackage"]
