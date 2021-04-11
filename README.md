@@ -25,3 +25,9 @@ To export local database `db` with username `sa` and password `password` to bacp
 docker run -it --rm -v /backups:/data --network=host markhobson/sqlpackage \
     /a:Export /ssn:tcp:localhost /sdn:db /su:sa /sp:password /tf:/data/db.bacpac
 ```
+
+## Tags
+
+The following Docker tags are available:
+
+* `18.7`, `latest` [(Dockerfile)](https://github.com/markhobson/docker-sqlpackage/blob/18.7/Dockerfile)
