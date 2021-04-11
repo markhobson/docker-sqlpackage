@@ -30,4 +30,5 @@ docker run -it --rm -v /backups:/data --network=host markhobson/sqlpackage \
 
 The following Docker tags are available:
 
-* `18.7`, `latest` [(Dockerfile)](https://github.com/markhobson/docker-sqlpackage/blob/18.7/Dockerfile)
+* `latest` [(Dockerfile)](Dockerfile)
+* `18.7` [(Dockerfile)](https://github.com/markhobson/docker-sqlpackage/blob/18.7/Dockerfile)
