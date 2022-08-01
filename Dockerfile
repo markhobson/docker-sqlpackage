@@ -2,7 +2,7 @@ FROM ubuntu:20.04
 
 # sqlpackage
 
-ARG SQLPACKAGE_URL=https://download.microsoft.com/download/0/2/0/020aa2fa-f3f2-41ba-bacd-ff15557890d3/sqlpackage-linux-x64-en-US-15.0.5084.2.zip
+ARG SQLPACKAGE_URL=https://download.microsoft.com/download/f/0/9/f091c731-45be-48fa-ae84-bc28388e3ef8/sqlpackage-linux-x64-en-16.0.6161.0.zip
 
 RUN apt update \
 	&& apt install -y wget zip libunwind8 libicu66 \
