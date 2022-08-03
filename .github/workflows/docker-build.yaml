@@ -24,6 +24,5 @@ jobs:
           context: .
           push: true
           tags: markhobson/sqlpackage:${{ github.sha }}
-          target: package
           cache-from: type=registry,ref=markhobson/sqlpackage:buildcache # Remove if you do not need cache (I suspect you will probably not)
           cache-to: type=registry,ref=markhobson/sqlpackage:buildcache,mode=max # Remove if you do not need cache
